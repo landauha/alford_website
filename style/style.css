@@ -9,7 +9,214 @@ body{
   font-size: 16px;
 }
 
+.page_container{
+  /* position: relative;
+  min-height: 100vh; */
+}
+
+.content_wrap{
+  /* padding-top: 60px;    /* Footer height *
+  padding-bottom: 60px;    /* Footer height * */
+}
+
+.header {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;            /* Footer height */
+}
+
+#header_logo{
+  display: block;
+  padding: 20px;
+  width: auto;
+  height: 40px;
+}
+
+#footer_logo{
+  display: block;
+  padding: 20px;
+  width: auto;
+  height: 40px;
+}
+
+.nav_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+}
+
+nav li{
+  display: inline-block;
+  flex: 1;
+}
+
+nav a{
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav a .active {
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: relative;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  position: absolute;
+  top: 0;
+  transition: auto;
+}
+
+nav ul li a.active-page{
+  color: black;
+  text-decoration: underline;
+}
+
+/* BEGINNING: index.html - Hero/Home page */
+/* END: index.html - Hero/Home page */
+
+/* BEGINNING: aboutme.html */
+/* END: aboutme.html */
+
+/* BEGINNING: cv.html */
+/* END: cv.html */
+
+/* BEGINNING: links.html */
+
+#main{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.links {
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-size: 2.5em;
+  line-height: 1;
+  /* padding-bottom: 30px; */
+}
+
+.filter_links_btns {
+  display: flex;
+  /* Style filter buttons */
+}
+
+.flex_links_btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  border: 1px solid black;
+  color: black;
+  /* font-family: 'Ubuntu', sans-serif; */
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.25;
+  width: 25vw;
+  height: auto;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding: 20px 50px;
+  margin: 10px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#btn_show_all {
+  background-color: rgb(246, 141, 183);
+}
+
+#btn_wastetime {
+  background-color: rgb(113, 189, 241);
+}
+
+#btn_useful {
+  background-color: rgb(190, 150, 255);
+}
+
+.links_container {
+  color: black;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+/* END: links.html */
+
+/* BEGINNING: research.html */
+
+/* END: research.html */
+
+/* BEGINNING: teaching.html */
+
 .courses{
   display: flex;
   flex-direction: row;
 }
+
+/* END: teaching.html */
